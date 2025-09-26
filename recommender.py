@@ -1,79 +1,78 @@
 # LDCW6123 - Group Project: Part 2 Interactive Program
 # Program Title: Spotify Playlist Recommendation Assistant
-# This program recommends a Spotify playlist based on the user's mood.
-# It demonstrates the core logic of personalization that helped Spotify disrupt
-# the traditional music industry by offering curated, access-based listening
-# experiences instead of just selling tracks.
+# Description: An interactive program that suggests Spotify playlists based on user's mood.
+# It runs in a loop, allowing multiple selections, and includes an exit option.
 
 def recommend_playlist():
     """
     Main function to run the playlist recommender.
-    It takes user input for their mood and provides a playlist suggestion.
-    This fulfills the requirement for a program with user inputs and outputs.
+    It contains the primary loop and logic for the program.
     """
     
-    # Welcome message and instructions for the user for a good user experience.
+    # Display a one-time welcome message when the program starts.
     print("=====================================================")
     print(" Welcome to the Spotify Playlist Recommendation Assistant!")
     print("=====================================================")
-    print("Tell us your mood, and we'll suggest a playlist for you.")
-    print("Choose from: Happy, Sad, Focus, Workout\n")
-    
-    # Get user input. The .strip() and .lower() methods help handle user entry errors.
-    user_mood = input("Enter your current mood: ").strip().lower()
-    
-    # This section uses if/elif/else statements to process user choices,
-    # which is a core requirement of the assignment.
-    
-    print("\n--- Your Recommendation ---")
-    
-    if user_mood == "happy":
-        # Output for 'happy' mood
-        print("Playlist Suggestion: 'All-Time Happy Anthems'")
-        print("Description: Feel-good tracks to boost your mood and make you smile.")
-        print("Songs you might like:")
-        print("  - 'Don't Stop Me Now' by Queen")
-        print("  - 'Happy' by Pharrell Williams")
-        print("  - 'Walking on Sunshine' by Katrina & The Waves")
-            
-    elif user_mood == "sad":
-        # Output for 'sad' mood
-        print("Playlist Suggestion: 'Timeless Tearjerkers'")
-        print("Description: Mellow and emotional tracks for reflective moments.")
-        print("Songs you might like:")
-        print("  - 'Someone Like You' by Adele")
-        print("  - 'Lover, You Should’ve Come Over' by Jeff Buckley")
-        print("  - 'Let Down' by Radiohead")
 
-    elif user_mood == "focus":
-        # Output for 'focus' mood
-        print("Playlist Suggestion: 'Iconic Instrumentals'")
-        print("Description: Instrumental music to help you concentrate.")
-        print("Songs you might like:")
-        print("  - 'Test Drive' by John Powell (from HTTYD)")
-        print("  - 'Duel of the Fates' by John Williams")
-        print("  - 'Concerning Hobbits' by Howard Shore (from The Lord of the Rings)")
+    # The main program loop runs continuously until the user chooses to exit.
+    while True:
+        # Display the menu of options to the user in each loop iteration.
+        print("Tell us your mood, and we'll suggest a playlist for you.")
+        print("Choose from: Happy, Sad, Focus, Workout")
+        print("(Type 'exit' to quit the program)\n")
+        
+        # Get and process user input, removing whitespace and converting to lowercase.
+        user_mood = input("Enter your current mood: ").strip().lower()
+        
+        # Check for the exit condition to terminate the program.
+        if user_mood == 'exit':
+            print("\nExiting the recommendation assistant. Goodbye!")
+            break
             
-    elif user_mood == "workout":
-        # Output for 'workout' mood
-        print("Playlist Suggestion: 'Ultimate Workout Anthems'")
-        print("Description: High-energy tracks to power you through your workout.")
-        print("Songs you might like:")
-        print("  - 'Eye of the Tiger' by Survivor")
-        print("  - 'Back in Black' by AC/DC")
-        print("  - 'Sweet Child O' Mine' by Guns N' Roses")
+        print("\n--- Your Recommendation ---")
+        
+        # Process the user's choice and provide the corresponding recommendation.
+        if user_mood == "happy":
+            print("Playlist Suggestion: 'All-Time Happy Anthems'")
+            print("Description: Timeless, feel-good classics that everyone knows.")
+            print("Songs you might like:")
+            print("  - 'Don't Stop Me Now' by Queen")
+            print("  - 'Happy' by Pharrell Williams")
+            print("  - 'Walking on Sunshine' by Katrina & The Waves")
             
-    # This 'else' block below is where the message for wrong input is handled.
-    # It catches any input that is not 'happy', 'sad', 'focus', or 'workout'.
-    else:
-        print(f"Sorry, '{user_mood}' is not a valid option.")
-        print("Please run the program again and choose one of the following moods:")
-        print("Happy, Sad, Focus, or Workout.")
+        elif user_mood == "sad":
+            print("Playlist Suggestion: 'Timeless Tearjerkers'")
+            print("Description: Mellow and emotional tracks for reflective moments.")
+            print("Songs you might like:")
+            print("  - 'Someone Like You' by Adele")
+            print("  - 'Lover, You Should've Come Over' by Jeff Buckley")
+            print("  - 'Let Down' by Radiohead")
+
+        elif user_mood == "focus":
+            print("Playlist Suggestion: 'Iconic Instrumentals'")
+            print("Description: Instrumental music to help you concentrate.")
+            print("Songs you might like:")
+            print("  - 'Test Drive' by John Powell (from HTTYD)")
+            print("  - 'Duel of the Fates' by John Williams")
+            print("  - 'Concerning Hobbits' by Howard Shore (from The Lord of the Rings)")
             
-    print("\n---------------------------")
-    print("Enjoy your music!")
+        elif user_mood == "workout":
+            print("Playlist Suggestion: 'Ultimate Workout Anthems'")
+            print("Description: High-energy tracks to power you through your workout.")
+            print("Songs you might like:")
+            print("  - 'Eye of the Tiger' by Survivor")
+            print("  - 'Back in Black' by AC/DC")
+            print("  - 'Sweet Child O' Mine' by Guns N' Roses")
+            
+        # Handle cases where the user input does not match any of the valid options.
+        else:
+            print(f"Sorry, '{user_mood}' is not a valid option.")
+            print("Please try one of the suggested moods.")
+            
+        # Print a separator for better readability before the next loop iteration.
+        print("\n=====================================================\n")
 
 
-# This line runs the main function when the script is executed.
+# This standard entry point runs the main function when the script is executed.
 if __name__ == "__main__":
     recommend_playlist()
