@@ -29,41 +29,41 @@ def recommend_playlist():
     
     if user_mood == "happy":
         # Output for 'happy' mood
-        print("Playlist Suggestion: 'Happy Hits!'")
+        print("Playlist Suggestion: 'All-Time Happy Anthems'")
         print("Description: Feel-good tracks to boost your mood and make you smile.")
         print("Songs you might like:")
+        print("  - 'Don't Stop Me Now' by Queen")
         print("  - 'Happy' by Pharrell Williams")
-        print("  - 'Good as Hell' by Lizzo")
         print("  - 'Walking on Sunshine' by Katrina & The Waves")
             
     elif user_mood == "sad":
         # Output for 'sad' mood
-        print("Playlist Suggestion: 'Sad Indie'")
+        print("Playlist Suggestion: 'Timeless Tearjerkers'")
         print("Description: Mellow and emotional tracks for reflective moments.")
         print("Songs you might like:")
-        print("  - 'To Build A Home' by The Cinematic Orchestra")
-        print("  - 'I Will Follow You into the Dark' by Death Cab for Cutie")
-        print("  - 'skinny love' by Bon Iver")
+        print("  - 'Someone Like You' by Adele")
+        print("  - 'Lover, You Should’ve Come Over' by Jeff Buckley")
+        print("  - 'Let Down' by Radiohead")
 
     elif user_mood == "focus":
         # Output for 'focus' mood
-        print("Playlist Suggestion: 'Deep Focus'")
-        print("Description: Ambient and instrumental music to help you concentrate.")
+        print("Playlist Suggestion: 'Iconic Instrumentals'")
+        print("Description: Instrumental music to help you concentrate.")
         print("Songs you might like:")
-        print("  - 'Music for Airports 1/1' by Brian Eno")
-        print("  - 'Nuvole Bianche' by Ludovico Einaudi")
-        print("  - 'Clair de Lune' by Claude Debussy")
+        print("  - 'Test Drive' by John Powell (from HTTYD)")
+        print("  - 'Duel of the Fates' by John Williams")
+        print("  - 'Concerning Hobbits' by Howard Shore (from The Lord of the Rings)")
             
     elif user_mood == "workout":
         # Output for 'workout' mood
-        print("Playlist Suggestion: 'Beast Mode'")
+        print("Playlist Suggestion: 'Ultimate Workout Anthems'")
         print("Description: High-energy tracks to power you through your workout.")
         print("Songs you might like:")
-        print("  - 'Till I Collapse' by Eminem")
-        print("  - 'POWER' by Kanye West")
-        print("  - 'Can't Hold Us' by Macklemore & Ryan Lewis")
+        print("  - 'Eye of the Tiger' by Survivor")
+        print("  - 'Back in Black' by AC/DC")
+        print("  - 'Sweet Child O' Mine' by Guns N' Roses")
             
-    # NEW: This 'else' block below is where the message for wrong input is handled.
+    # This 'else' block below is where the message for wrong input is handled.
     # It catches any input that is not 'happy', 'sad', 'focus', or 'workout'.
     else:
         print(f"Sorry, '{user_mood}' is not a valid option.")
