@@ -18,6 +18,22 @@ Group Members:
 | 1221101160 | Muhammad Nabil Naufal bin Md Zaid | Group Member |
 | 1221101309 | Natasha Tomira Anak Thomas | Group Member |
 
+Program:
+<table>
+  <tr>
+    <th>Title</th>
+    <td>Spotify Playlist Recommendation Assistant</td>
+  </tr>
+  <tr>
+    <th>Inputs</th>
+    <td>User's mood</td>
+  </tr>
+   <tr>
+      <th>Outputs</th>
+      <td>Suggested Spotify playlists based on user's mood</td>
+   </tr>
+</table>
+
 Steps to Run Program:
 
 1. Open Terminal.
