@@ -1,8 +1,20 @@
-Subject: Fundamentals of Digital Competence
+Course: Fundamentals of Digital Competence
 
-Lecturer: Miss Siti
+Course code: LDCW6123
 
-Group Leader: Manisha
+Lecturer: Miss Siti Haslinda Mukhtar
+
+Class section: FCI7
+
+Group members:
+| Student ID | Student Name(s) | Designation |
+| ---------- | --------------- | ----------- |
+| 1211110730 | Manisha Farhana Binti Mohammad Ibrahim Miah | Group Leader |
+| 251UC2514R | Adam Wafiy Bin Helmy | Group Member |
+| 1211111345 | Amar Arshad Bin Ayub | Group Member |
+| 251UC2507N | Ahmad Danial Hakimi Bin Ahmad Fadilli | Group Member |
+| 1221101160 | Muhammad Nabil Naufal bin Md Zaid | Group Member |
+| 1221101309 | Natasha Tomira Anak Thomas | Group Member |
 
 Steps to run program:
 
