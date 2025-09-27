@@ -1,5 +1,7 @@
 Subject: Fundamentals of Digital Competence
+
 Lecturer: Miss Siti
+
 Group Leader: Manisha
 
 Steps to run program:
