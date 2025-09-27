@@ -12,16 +12,16 @@ Steps to run program:
 
 3. Navigate to the directory where the file is located with the ‘cd’ command.
 
-  cd DigitalComp_GroupManisha 
+   cd DigitalComp_GroupManisha 
 
 4. Perform ‘git clone’ with the Git repository.
 
-  git clone https://github.com/NaufalZaid/FundamentalsOfDigitalCompetenceAssignment2.git
+   git clone https://github.com/NaufalZaid/FundamentalsOfDigitalCompetenceAssignment2.git
   
 5. A directory with the name of the Git repository will be created within your current directory. Navigate to that directory.
 
-  cd FundamentalsOfDigitalCompetenceAssignment2 
+   cd FundamentalsOfDigitalCompetenceAssignment2 
 
 6. Run the program with the ‘python3’ command.
 
-  python3 recommender.py 
+   python3 recommender.py 
