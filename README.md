@@ -8,7 +8,7 @@ Lecturer: Miss Siti Haslinda Mukhtar
 
 Class Section: FCI7
 
-Group members:
+Group Members:
 | Student ID | Student Name(s) | Designation |
 | ---------- | --------------- | ----------- |
 | 1211110730 | Manisha Farhana Binti Mohammad Ibrahim Miah | Group Leader |
