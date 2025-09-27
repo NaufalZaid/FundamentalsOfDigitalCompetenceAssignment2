@@ -1,10 +1,12 @@
 Course: Fundamentals of Digital Competence
 
-Course code: LDCW6123
+Course Code: LDCW6123
+
+Project: LDCW6123 - Group Project: Part 2 Interactive Program
 
 Lecturer: Miss Siti Haslinda Mukhtar
 
-Class section: FCI7
+Class Section: FCI7
 
 Group members:
 | Student ID | Student Name(s) | Designation |
@@ -16,7 +18,7 @@ Group members:
 | 1221101160 | Muhammad Nabil Naufal bin Md Zaid | Group Member |
 | 1221101309 | Natasha Tomira Anak Thomas | Group Member |
 
-Steps to run program:
+Steps to Run Program:
 
 1. Open Terminal.
 
@@ -36,6 +38,11 @@ Steps to run program:
 
    cd FundamentalsOfDigitalCompetenceAssignment2 
 
-6. Run the program with the ‘python3’ command.
+6. Run the program with the ‘python’ command.
 
-   python3 recommender.py 
+   python recommender.py
+
+7. If that does not work, run the program with the 'python3' command instead. 
+
+   python3 recommender.py
+   
